@@ -1,0 +1,16 @@
+#parent {
+    display: flex;
+    height: 10rem;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+/* 
+    justify-content:
+        flex-start, flex-end, center, 
+        space-between, space-around, space-evenly
+*/   
+/* 
+   align-items:
+        stretch, flex-start, flex-end, 
+        center, baseline
+*/

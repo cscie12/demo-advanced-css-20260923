@@ -1,0 +1,11 @@
+#parent {
+    display: flex;
+    height: 10rem;
+    justify-content: flex-start;
+}
+
+/* 
+    justify-content:
+        flex-start, flex-end, center, 
+        space-between, space-around, space-evenly
+*/        

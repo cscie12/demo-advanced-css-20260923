@@ -1,0 +1,102 @@
+/* Define custom CSS properties for colors. */
+:root {
+    --header-color: #B6D7E4;
+    --nav-color: #E78475;
+    --main-color: #F8F0E7;
+    --article-color: #FFFFFF;
+    --article-border-color: #A059CA;
+    --left-aside-color: #66CA4D;
+    --right-aside-color: #CD7593;
+    --footer-color: #D3D3D3;
+
+}
+
+/* Define CSS for small/default screens */
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Quantico", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+header, nav, main, article, aside, footer {
+    min-height: 2rem;
+    padding: 1rem;
+}
+
+header {
+    background-color: var(--header-color);
+}
+
+nav {
+    background-color: var(--nav-color);
+}
+
+main {
+    background-color: var(--main-color);
+}
+
+main article {
+    border: solid 2px var(--article-border-color);
+    background-color: var(--article-color);
+    margin: 0.5rem;
+
+}
+
+aside#left-aside {
+    background-color: var(--left-aside-color);
+}
+
+aside#right-aside {
+    background-color: var(--right-aside-color);
+}
+
+footer {
+    background-color: var(--footer-color);
+}
+
+/* Define CSS for screens larger than 600px */
+@media (min-width: 600px) {
+    #grid-container {
+        display: grid;
+        grid-template-areas:
+            "header header header"
+            "navigation navigation navigation"
+            "left-aside main-content right-aside"
+            "footer footer footer";
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    nav {
+        grid-area: navigation;
+    }
+
+    main {
+        grid-area: main-content;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main p {
+        grid-column: span 2;
+    }
+
+    #left-aside {
+        grid-area: left-aside;
+    }
+
+    #right-aside {
+        grid-area: right-aside;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+}
+

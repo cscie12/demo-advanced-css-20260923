@@ -1,0 +1,9 @@
+#parent {
+    display: flex;
+    height: 10rem;
+}
+
+#child-01 {
+    flex-basis: 500px;
+}
+

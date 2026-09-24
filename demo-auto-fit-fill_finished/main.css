@@ -1,0 +1,41 @@
+/* Set up */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Grid properties */
+.parent {
+    display: grid;
+}
+
+.grid-auto-fill {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.grid-auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+/* For visualization purposes */
+.grid-auto-fill .child {
+    background-color: gold;
+}
+.grid-auto-fit .child {
+    background-color: yellow;
+}
+
+.child {
+    font-size: 1.5rem;
+    border: 2px solid currentColor;
+    border-radius: 05.rem;
+    margin: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+    outline: dotted currentColor 1px;
+    outline-offset: -0.5rem;
+
+}
